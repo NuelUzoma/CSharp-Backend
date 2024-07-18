@@ -59,7 +59,7 @@ namespace First_Backend.Controllers
             return CreatedAtAction(nameof(CreateUser), new { id = userDto.Id }, userDto);
         }
 
-        // Get all user in the database
+        // Get all users in the database
         [HttpGet]
         public async Task<ActionResult<IEnumerable<UserDto>>> GetUsers()
         {
@@ -112,7 +112,7 @@ namespace First_Backend.Controllers
             _context.Users.Remove(user);
             await _context.SaveChangesAsync();
 
-            return Ok(new { message = "User don comot from the application" });
+            return Ok(new { message = "User has been deleted successfully" });
         }
     }
 }

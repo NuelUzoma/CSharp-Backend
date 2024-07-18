@@ -137,7 +137,7 @@ Before you begin, ensure you have the following installed:
 
 ### User Authentication
 
-- **Endpoint:** `POST /api/user/login`
+- **Endpoint:** `POST /api/auth/login`
 - **Description:** Authenticates a user and returns a JWT.
 - **Request Body:**
   ```json
@@ -218,7 +218,7 @@ Before you begin, ensure you have the following installed:
 - **Response:**
   ```json
     {
-         "message": "User don comot from the application"
+         "message": "User has been deleted successfully"
     }
   ```
 
