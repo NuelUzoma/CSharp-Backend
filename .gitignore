@@ -170,3 +170,7 @@ hs_err_pid*
 Properties/
 .config/
 *.http
+
+# App settings file
+appsettings.json
+appsettings.Development.json
